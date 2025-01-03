@@ -95,21 +95,23 @@ img:hover {
 	font-weight: 300;
 	padding-bottom: 10px;
 	text-shadow: 1px 1px 2px black; /* Agrega sombra negra al texto */
+	font-size: 48px; /* Aumenta el tamaño del texto */
 }
 #home h2 {
 	color: #ffd68b; /* Cambia el color del subtítulo */
 	line-height: 10px;
 	text-shadow: 1px 1px 2px black; /* Agrega sombra negra al texto */
+	font-size: 36px; /* Aumenta el tamaño del texto */
 }
 #home p {
     color: #ffd68b; /* Cambia el color del párrafo */
 	text-shadow: 1px 1px 2px black; /* Agrega sombra negra al texto */
+	font-size: 18px; /* Aumenta el tamaño del texto */
 }
 #home .btn {
-	background: transparent;
-	border: 2px solid #e4d1d1;
-	border-radius: 0;
-	color: #e4d1d1;
+	background: #f2af00; /* Cambia el color de fondo del botón */
+	border: 2px solid #f2af00;
+	color: #fff; /* Cambia el color del texto del botón */
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 	padding-top: 14px;
@@ -118,9 +120,9 @@ img:hover {
 	margin-top: 20px;
 }
 #home .btn:hover {
-	background: #fdc5ba;
-	border-color: transparent;
-	color: #fff;
+	background: transparent; /* Cambia el color de fondo del botón al pasar el mouse */
+	border-color: #f2af00;
+	color: #f2af00; /* Cambia el color del texto del botón al pasar el mouse */
 }
 /* service section */
 #service {
