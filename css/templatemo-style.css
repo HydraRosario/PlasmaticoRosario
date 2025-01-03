@@ -43,7 +43,7 @@ img:hover {
 	margin: 0 !important;
 }
 .navbar-default .navbar-brand {
-	background: #ffe299;
+	background: hsl(4, 100%, 60%);
 	color: #fff;
 	font-weight: bold;
 	font-size: 26px;
@@ -53,7 +53,7 @@ img:hover {
 	padding: 20px 20px 40px 20px;
 }
 .navbar-default .navbar-brand:hover {
-	background: #ffd68b;
+	background: #ff2c2c;
 }
 .navbar-default .navbar-nav li a {
 	border-right: 1px solid #f9f9f9;
