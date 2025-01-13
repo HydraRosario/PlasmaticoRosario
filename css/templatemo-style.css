@@ -42,6 +42,8 @@ img:hover {
 	border: none;
 	box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
 	margin: 0 !important;
+    padding: 0 !important;
+    min-height: auto !important;
 }
 .navbar-default .navbar-brand {
 	background: hsl(4, 100%, 60%);
@@ -49,9 +51,14 @@ img:hover {
 	font-weight: bold;
 	font-size: 26px;
 	line-height: 50px;
-	height: 90px;
+	height: 80px; /* Reduced from 90px */
 	margin: 0;
-	padding: 20px 20px 40px 20px;
+	padding: 15px 20px; /* Adjusted padding */
+}
+.navbar-header img {
+    height: 80px !important; /* Match navbar height */
+    margin: 0 !important;
+    vertical-align: top !important; /* Align to top */
 }
 .navbar-default .navbar-brand:hover {
 	background: #ff2c2c;
@@ -88,8 +95,10 @@ img:hover {
 	background-size: cover;
 	background-position: center;
 	min-height: 600px;
-	padding-top: 220px;
-	padding-bottom: 100px;
+	padding-top: 120px; /* Reduced padding to remove extra space */
+	padding-bottom: 0; /* Remove bottom padding */
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
 }
 #home h1 {
 	color: #ffd5d5; /* Cambia el color del texto principal */
@@ -127,8 +136,10 @@ img:hover {
 }
 /* service section */
 #service {
-	padding-top: 100px;
+	padding-top: 0; /* Remove top padding */
 	padding-bottom: 80px;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
 }
 #service h2 {
 	border-left: 2px solid #f2af00;
@@ -147,6 +158,10 @@ img:hover {
 	vertical-align: middle;
 	margin-top: 60px;
 	margin-bottom: 10px;
+}
+#service .text-center {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
 /* about section */
 #about {
@@ -436,10 +451,11 @@ footer span {
 
 /* carousel section */
 #homeCarousel {
-    height: calc(100vh - 90px); /* Adjust height to fill screen minus navbar */
+    width: 100%; /* Adjust width to 100% */
+    height: calc(100vh - 120px); /* Adjust height to fill screen minus navbar */
     overflow: hidden;
     position: relative;
-    margin-top: 90px; /* Add space for navbar */
+    margin-top: 0; /* Remove extra margin */
 }
 
 @media (max-width: 768px) {
@@ -519,14 +535,17 @@ footer span {
 	background: rgba(255, 255, 255, 0.7) !important;
 	padding: 30px !important;
 	border-radius: 20px !important;
-	position: absolute !important;
+	position: relative !important;
 	top: 5% !important;
-	left: 100% !important;
 	z-index: 1000 !important;
-	max-width: 500px !important;
-	width: 90% !important;
+	max-width: 100% !important;
+	width: 100% !important; /* Ensure width is 100% */
+	height: 70vh !important; /* Adjust height to match carousel */
 	box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;
 	text-align: center !important; /* Center text */
+	margin-top: 0; /* Align with carousel */
+	overflow: hidden; /* Ensure text stays within container */
+	word-wrap: break-word; /* Break long words */
 }
 
 #home .text-container .btn {
@@ -586,12 +605,13 @@ footer span {
 }
 
 .before-after-section img {
-    width: 100%;
-    height: 400px; /* Set fixed height for before/after images */
+    width: 80% !important; /* Make images narrower */
+    height: 300px !important; /* Make images shorter */
     object-fit: cover;
     border: 3px solid #f2af00;
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin: 0 auto 20px auto; /* Center images */
+    display: block;
     transition: transform 0.3s ease;
 }
 
@@ -607,6 +627,10 @@ footer span {
     margin-bottom: 15px;
     text-align: center;
     font-weight: bold;
+}
+
+.before-after-section .col-md-6 {
+    padding: 10px 30px; /* Add some horizontal padding */
 }
 
 @media (max-width: 768px) {
