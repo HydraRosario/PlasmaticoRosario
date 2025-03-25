@@ -21,6 +21,83 @@ http://www.templatemo.com/free-website-templates/
 <link rel="stylesheet" href="css/templatemo-style.css">
 <!-- google web font css -->
 <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600,700" rel="stylesheet" type="text/css">
+
+<style>
+.before-after-section {
+    margin-bottom: 40px;
+}
+
+.before-after-pair {
+    margin-bottom: 30px;
+    clear: both;
+}
+
+.comparison-title {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.before-image, .after-image {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .before-after-pair .row {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .before-image, .after-image {
+        padding: 5px;
+        width: 50%;
+        flex: 0 0 50%;
+    }
+    
+    .before-image img, .after-image img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Asegurar que el footer está por debajo del contenido */
+footer {
+    clear: both;
+    position: relative;
+    margin-top: 40px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.footer-wrapper {
+    position: relative;
+    clear: both;
+    background-color: #fff;
+    margin-top: 40px;
+    padding-top: 20px;
+    width: 100%;
+    z-index: 999; /* Increased z-index */
+}
+
+.iso-section {
+    margin-bottom: 60px; /* Added margin to separate from footer */
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .footer-wrapper {
+        margin-top: 60px;
+        position: relative;
+        z-index: 999;
+    }
+    
+    .iso-section {
+        margin-bottom: 80px;
+    }
+}
+</style>
+
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" id="top">
 <!-- navigation -->
@@ -98,33 +175,25 @@ http://www.templatemo.com/free-website-templates/
     <div class="row">
       <!-- Agregando el iframe de AgendaPro aquí -->
       <div class="col-md-12 col-sm-12 text-center" style="margin-top: 20px;">
-        <iframe src="https://agendapro.com/iframe/overview/33df17c5-7dc0-4321-a369-539a7d110295" 
-                width="100%" 
-                marginwidth="0" 
-                marginheight="0" 
-                frameborder="no" 
-                scrolling="yes" 
-                style="border-width:0px; height: 800px; border-radius: 10px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
-        </iframe>
+        <iframe src="https://agendapro.com/iframe/overview/33df17c5-7dc0-4321-a369-539a7d110295" width="100%" marginwidth="0" marginheight="0" frameborder="no" scrolling="yes" style="border-width:0px; height: 800px; border-radius: 10px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);"></iframe>
       </div>
+    </div>
+  </div>
+</div>
 <!-- about section -->
 <div id="about">
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-sm-12">
-        <h2>La historia de Plasmatico Rosario</h2>
+        <h3>SOBRE NOSOTROS</h3>
+        <p>Plasmático Rosario nació de un sueño compartido: fusionar la ciencia con el arte de transformar vidas. Cada miembro de nuestro equipo trae consigo años de experiencia, dedicación y una pasión inquebrantable por la belleza y el bienestar.</p>
+        <p>En nuestro espacio, no solo utilizamos las técnicas más avanzadas y los materiales de la más alta calidad; también cultivamos un ambiente de confianza y cuidado. Aquí, cada tratamiento es una promesa de renovación y cada cliente es recibido con el compromiso de realzar lo mejor de sí mismo.</p>
+        <p>Desde el primer momento que cruces nuestra puerta, sentirás que no se trata solo de estética, sino de un viaje hacia una versión más radiante y segura de ti. En Plasmático Rosario, tus metas son nuestra inspiración, y tus resultados, nuestra mayor recompensa.</p>
+        <p>Déjanos ser parte de tu transformación.</p>
       </div>
       <div class="col-md-6 col-sm-6"><img src="images/about-img.jpg" class="img-responsive" alt="about img"></div>
       <div class="col-md-6 col-sm-6">
-        <h3>SOBRE NOSOTROS</h3>
         <h4>Profesionales capacitados &amp; Materiales de calidad.</h4>
-        <p>Plasmático Rosario nació de un sueño compartido: fusionar la ciencia con el arte de transformar vidas. Cada miembro de nuestro equipo trae consigo años de experiencia, dedicación y una pasión inquebrantable por la belleza y el bienestar.
-
-          En nuestro espacio, no solo utilizamos las técnicas más avanzadas y los materiales de la más alta calidad; también cultivamos un ambiente de confianza y cuidado. Aquí, cada tratamiento es una promesa de renovación y cada cliente es recibido con el compromiso de realzar lo mejor de sí mismo.
-          
-          Desde el primer momento que cruces nuestra puerta, sentirás que no se trata solo de estética, sino de un viaje hacia una versión más radiante y segura de ti. En Plasmático Rosario, tus metas son nuestra inspiración, y tus resultados, nuestra mayor recompensa.
-          
-          Déjanos ser parte de tu transformación.</p>
       </div>
     </div>
   </div>
@@ -152,7 +221,6 @@ http://www.templatemo.com/free-website-templates/
         <h4>Especialista en prp</h4>
         <h4>Cosmetologa</h4>
         <h4>Masajista </h4>
-        <h4>Esteticista</h4>
       </div>
       <div class="col-md-3 col-sm-3"><img src="images/team2.jpg" class="img-responsive" alt="team img">
         <h3>María Eugenia Coronel</h3>
@@ -162,50 +230,21 @@ http://www.templatemo.com/free-website-templates/
       </div>
       <div class="col-md-3 col-sm-3"><img src="images/team3.jpg" class="img-responsive" alt="team img">
         <h3>Maria Laura Gomez</h3>
+        <h4>Técnica superior en hemoterapia</h4>
+        <h4>Diplomatura en servicios y sistemas de salud</h4>
         <h4>Cosmetologa</h4>
         <h4>Masajista </h4>
         <h4>Esteticista</h4>
         <h4>Reflexologa</h4>
       </div>
       <div class="col-md-3 col-sm-3"><img src="images/team4.jpg" class="img-responsive" alt="team img">
-        <h3>Roxana Aguilera</h></h3>
+        <h3>Roxana Aguilera</h3>
         <h4>Técnica superior en hemoterapia</h4>
         <h4>Diplomatura en servicios y sistemas de salud</h4>
       </div>
     </div>
   </div>
 </div>
-<!-- portfolio section -->
-<div id="portfolio">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 col-sm-12">
-        <div class="col-md-12 col-sm-12">
-          <h2 style="margin-top: 20px;">Transforma tu piel con el poder del plasma.</h2>
-        </div>
-        <div class="col-md-4 col-sm-4"> <i class="fa fa-paper-plane"></i>
-          <h3>Beneficios.</h3>
-          <p>El plasma rico en plaquetas (PRP) es un concentrado obtenido de la sangre del paciente mediante centrifugación, aislando las plaquetas y factores de crecimiento. Este tratamiento estimula la regeneración celular, favoreciendo la producción de colágeno y elastina.
-  
-            Trae beneficios a la piel, mejorando su textura y reduciendo arrugas y cicatrices; al cabello, frenando la caída y fortaleciendo los folículos; y al cuerpo, acelerando la recuperación de lesiones.</p>
-        </div>
-        <div class="col-md-4 col-sm-4"> <i class="fa fa-bell-o"></i>
-          <h3>Tratamientos disponibles.</h3>
-          <p>
-            Plasma 1 y 2 zonas.
-            Dermaplaning, Hidratación facial profunda, Hilos/Nubes de colágeno, Limpieza facial profunda.
-            Mini Hifu, Radiofrecuencia.
-            Glutaten/Glutabotx.
-            Masaje Descontracturante, Masaje Relajante y Reflexología.
-          </p>
-        </div>
-        <div class="col-md-4 col-sm-4"> <i class="fa fa-coffee"></i>
-          <h3>Resultados obtenidos.</h3>
-          <p>Nuestros clientes destacan resultados visibles desde la primera sesión: piel más luminosa y rejuvenecida, además de un cabello más fuerte. 5 estrellas en satisfacción. ¡Transforma tu confianza con nosotros!</p>
-        </div>
-      </div>
-    </div>
-  </div>
 <!-- divider section -->
 <div class="container">
   <div class="row">
@@ -216,139 +255,132 @@ http://www.templatemo.com/free-website-templates/
     <div class="col-md-1 col-sm-1"></div>
   </div>
 </div>
-        <!-- ISO section -->
-        <div class="iso-section">
-                        <!-- Primeras 8 imágenes normales -->
-                        <div class="iso-box col-md-4 col-sm-4 col-xs-12"><a href="images/portfolio-img1.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img1.jpg" alt="portfolio img"></a></div>
-                        <div class="iso-box col-md-4 col-sm-4 col-xs-12"><a href="images/portfolio-img2.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img2.jpg" alt="portfolio img"></a></div>
-                        <div class="iso-box col-md-4 col-sm-4 col-xs-12"><a href="images/portfolio-img3.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img3.jpg" alt="portfolio img"></a></div>
-                        <div class="iso-box col-md-4 col-sm-4 col-xs-12"><a href="images/portfolio-img7.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img7.jpg" alt="portfolio img"></a></div>
-                        <div class="iso-box col-md-4 col-sm-4 col-xs-12"><a href="images/portfolio-img5.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img5.jpg" alt="portfolio img"></a></div>
-                        <div class="iso-box col-md-4 col-sm-4 col-xs-12"><a href="images/portfolio-img8.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img8.jpg" alt="portfolio img"></a></div>
-          <!-- divider section -->
-<div class="container">
-  <div class::row">
-    <div class="col-md-1 col-sm-1"></div>
-    <div class="col-md-10 col-sm-10">
-      <hr>
+<!-- ISO section -->
+<div class="iso-section">
+  <div class="container">
+    <div class="row">
+      <!-- Primeras 8 imágenes normales -->
+      <div class="iso-box col-md-4 col-sm-4 col-xs-12"><a href="images/portfolio-img1.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img1.jpg" alt="portfolio img"></a></div>
+      <div class="iso-box col-md-4 col-sm-4 col-xs-12"><a href="images/portfolio-img2.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img2.jpg" alt="portfolio img"></a></div>
+      <div class="iso-box col-md-4 col-sm-4 col-xs-12"><a href="images/portfolio-img3.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img3.jpg" alt="portfolio img"></a></div>
+      <div class="iso-box col-md-4 col-sm-4 col-xs-12"><a href="images/portfolio-img7.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img7.jpg" alt="portfolio img"></a></div>
+      <div class="iso-box col-md-4 col-sm-4 col-xs-12"><a href="images/portfolio-img5.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img5.jpg" alt="portfolio img"></a></div>
+      <div class="iso-box col-md-4 col-sm-4 col-xs-12"><a href="images/portfolio-img8.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img8.jpg" alt="portfolio img"></a></div>
     </div>
-    <div class="col-md-1 col-sm-1"></div>
-  </div>
-</div>
-                        <!-- Removed filter-wrapper -->
-          <div class="iso-box-section">
-            <div class="iso-box-wrapper col4-iso-box">
 
-              <!-- Contenedor para antes y después -->
-              <div class="before-after-section">
-                <div class="row">
-                  <!-- Primera fila -->
-                  <div class="col-md-6">
-                    <h4 class="before-title">Antes</h4>
-                    <a href="images/portfolio-img9.jpg" data-lightbox-gallery="portfolio-gallery">
-                      <img src="images/portfolio-img9.jpg" alt="antes">
-                    </a>
-                  </div>
-                  <div class="col-md-6">
-                    <h4 class="after-title">Después</h4>
-                    <a href="images/portfolio-img10.jpg" data-lightbox-gallery="portfolio-gallery">
-                      <img src="images/portfolio-img10.jpg" alt="después">
-                    </a>
-                  </div>
+    <!-- Contenedor para antes y después -->
+    <div class="before-after-section">
+      <!-- Primera fila -->
+      <div class="before-after-pair">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 before-image">
+            <h4 class="comparison-title">Antes</h4>
+            <a href="images/portfolio-img9.jpg" data-lightbox-gallery="portfolio-gallery">
+              <img src="images/portfolio-img9.jpg" alt="antes" class="img-responsive">
+            </a>
+          </div>
+          <div class="col-md-6 col-sm-12 after-image">
+            <h4 class="comparison-title">Después</h4>
+            <a href="images/portfolio-img10.jpg" data-lightbox-gallery="portfolio-gallery">
+              <img src="images/portfolio-img10.jpg" alt="después" class="img-responsive">
+            </a>
+          </div>
+        </div>
+      </div>
 
-                  <!-- Segunda fila -->
-                  <div class="col-md-6">
-                    <a href="images/portfolio-img11.jpg" data-lightbox-gallery="portfolio-gallery">
-                      <img src="images/portfolio-img11.jpg" alt="antes">
-                    </a>
-                  </div>
-                  <div class="col-md-6">
-                    <a href="images/portfolio-img12.jpg" data-lightbox-gallery="portfolio-gallery">
-                      <img src="images/portfolio-img12.jpg" alt="después">
-                    </a>
-                  </div>
+      <!-- Segunda fila -->
+      <div class="before-after-pair">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 before-image">
+            <h4 class="comparison-title">Antes</h4>
+            <a href="images/portfolio-img11.jpg" data-lightbox-gallery="portfolio-gallery">
+              <img src="images/portfolio-img11.jpg" alt="antes" class="img-responsive">
+            </a>
+          </div>
+          <div class="col-md-6 col-sm-12 after-image">
+            <h4 class="comparison-title">Después</h4>
+            <a href="images/portfolio-img12.jpg" data-lightbox-gallery="portfolio-gallery">
+              <img src="images/portfolio-img12.jpg" alt="después" class="img-responsive">
+            </a>
+          </div>
+        </div>
+      </div>
 
-                  <!-- Tercera fila -->
-                  <div class="col-md-6">
-                    <a href="images/portfolio-img13.jpg" data-lightbox-gallery="portfolio-gallery">
-                      <img src="images/portfolio-img13.jpg" alt="antes">
-                    </a>
-                  </div>
-                  <div class="col-md-6">
-                    <a href="images/portfolio-img14.jpg" data-lightbox-gallery="portfolio-gallery">
-                      <img src="images/portfolio-img14.jpg" alt="después">
-                    </a>
-                  </div>
+      <!-- Tercera fila -->
+      <div class="before-after-pair">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 before-image">
+            <h4 class="comparison-title">Antes</h4>
+            <a href="images/portfolio-img13.jpg" data-lightbox-gallery="portfolio-gallery">
+              <img src="images/portfolio-img13.jpg" alt="antes" class="img-responsive">
+            </a>
+          </div>
+          <div class="col-md-6 col-sm-12 after-image">
+            <h4 class="comparison-title">Después</h4>
+            <a href="images/portfolio-img14.jpg" data-lightbox-gallery="portfolio-gallery">
+              <img src="images/portfolio-img14.jpg" alt="después" class="img-responsive">
+            </a>
+          </div>
+        </div>
+      </div>
 
-                  <!-- Cuarta fila -->
-                  <div class="col-md-6">
-                    <a href="images/portfolio-img16.jpg" data-lightbox-gallery="portfolio-gallery">
-                      <img src="images/portfolio-img16.jpg" alt="antes">
-                    </a>
-                  </div>
-                  <div class="col-md-6">
-                    <a href="images/portfolio-img15.jpg" data-lightbox-gallery="portfolio-gallery">
-                      <img src="images/portfolio-img15.jpg" alt="después">
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <!-- Cuarta fila -->
+      <div class="before-after-pair">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 before-image">
+            <h4 class="comparison-title">Antes</h4>
+            <a href="images/portfolio-img16.jpg" data-lightbox-gallery="portfolio-gallery">
+              <img src="images/portfolio-img16.jpg" alt="antes" class="img-responsive">
+            </a>
+          </div>
+          <div class="col-md-6 col-sm-12 after-image">
+            <h4 class="comparison-title">Después</h4>
+            <a href="images/portfolio-img15.jpg" data-lightbox-gallery="portfolio-gallery">
+              <img src="images/portfolio-img15.jpg" alt="después" class="img-responsive">
+            </a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<!-- divider section -->
-<div class="container">
-  <div class="row">
-    <div class="col-md-1 col-sm-1"></div>
-    <div class="col-md-10 col-sm-10">
-      <hr>
-    </div>
-    <div class="col-md-1 col-sm-1"></div>
-  </div>
-</div>
-<!-- footer section -->
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-sm-6">
-        <h2>Nuestras oficinas.</h2>
-        <p>Montevideo 715 3 B, Rosario, Argentina</p>
-        <p>Telefono: <span>+54 9 3413 57-8417</span></p>
-      </div>
-      <div class="col-md-6 col-sm-6">
-        <h2>Nuestas redes.</h2>
-        <ul class="social-icons">
-          <li><a href="https://www.facebook.com/PlasmaticoRosario?locale=es_LA" class="fa fa-facebook" target="_blank"></a></li>
-          <li><a href="https://www.instagram.com/plasmaticorosario/?hl=es-es" class="fa fa-instagram" target="_blank"></a></li>
-        </ul>
+
+<!-- Clear divider -->
+<div style="clear: both;"></div>
+
+<!-- footer wrapper -->
+<div class="footer-wrapper">
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <h2>Nuestras oficinas.</h2>
+          <p>Montevideo 715 3 B, Rosario, Argentina</p>
+          <p>Telefono: <span>+54 9 3413 57-8417</span></p>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <h2>Nuestas redes.</h2>
+          <ul class="social-icons">
+            <li><a href="https://www.facebook.com/PlasmaticoRosario?locale=es_LA" class="fa fa-facebook" target="_blank"></a></li>
+            <li><a href="https://www.instagram.com/plasmaticorosario/?hl=es-es" class="fa fa-instagram" target="_blank"></a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-<!-- divider section -->
-<div class="container">
-  <div class="row">
-    <div class="col-md-1 col-sm-1"></div>
-    <div class="col-md-10 col-sm-10">
-      <hr>
-    </div>
-    <div class="col-md-1 col-sm-1"></div>
-  </div>
-</div>
-<!-- copyright section -->
-<div class="copyright">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 col-sm-12">
-        <p>&copy; Plasmatico Rosario 2025. Todos los derechos reservados | Design: <a target="_blank" rel="nofollow" href="https://www.instagram.com/hhhestudios/">HydraRosario</a></p>
+  </footer>
+
+  <!-- copyright section -->
+  <div class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <p>&copy; Plasmatico Rosario 2025. Todos los derechos reservados | Design: <a target="_blank" rel="nofollow" href="https://www.instagram.com/hhhestudios/">HydraRosario</a></p>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
 <!-- scrolltop section --> 
 <a href="#top" class="go-top"><i class="fa fa-angle-up"></i></a> 
 <!-- javascript js --> 
